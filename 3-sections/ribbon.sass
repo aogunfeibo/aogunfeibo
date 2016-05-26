@@ -1,0 +1,34 @@
+.services-wrap header
+    width: 50px
+
+    .back-cta
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      width: 50px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    .return-back
+      margin: auto 0
+      transition: 0.3s ease-in-out
+
+      &:hover
+        transform: translateX(25px)
+
+      a
+        +hide-text
+        transform: rotate(270deg)
+        display: flex
+        background:
+          repeat: no-repeat
+          position: center
+          size: contain
+
+        transition: 0.3s ease-in-out
+
+@media (max-width:775px)
+  .services-wrap header
+    display: none

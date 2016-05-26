@@ -1,0 +1,141 @@
+.home-wrap
+  display: block
+
+  @media (max-width: 775px)
+    display: block
+
+.lawyer-wrap
+  display: block
+
+  @media (max-width: 775px)
+    display: block
+
+
+.service-wrap
+  display: block
+
+  @media (max-width: 775px)
+    display: block
+
+
+.home-sections
+  flex: 1
+
+  section
+
+    padding-bottom: 45px
+
+  .hover-space
+    height: 50px
+    background: none
+
+    @media (max-width: 775px)
+      display: none
+
+  .container
+    height: 100%
+    align-items: center
+
+
+  // Flex Classes
+  .flex
+    display: flex
+    flex-direction: rows
+
+  .flex--column
+    display: flex
+    flex-direction: column
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .flex--space-between
+    justify-content: space-between
+
+  .flex--end
+    justify-content: flex-end
+
+  .flex-start
+    justify-content: flex-start
+
+  .order-first
+    order: -1
+
+
+
+  // columns
+
+.col-0
+  width: 340px
+  margin: 0 10px
+
+.col-1
+  max-width: 300px
+  margin: 0 10px
+
+.col-2
+  max-width: 620px
+  margin: 0 10px
+
+.col-22
+  max-width: 600px
+  margin: 0 10px
+
+.col-23
+  max-width: 700px
+  margin: 0 10px
+
+.col-3
+  width: 800px
+  margin: 0 10px
+
+.col-4
+  width: 800px
+
+.col-50
+  width: 50%
+
+.col-55
+  width: 75%
+
+.col-5
+  width: 100%
+
+  @media (max-width: 775px)
+    display: block
+
+.push-left
+  margin-right: 150px
+
+@media (max-width: 640px)
+  .home-sections .flex
+    display: block
+
+  .col-0
+    max-width: 100%
+
+  .col-1
+    max-width: 100%
+
+  .col-2
+
+
+  .col-50
+    width: auto
+
+  .col-3
+    width: auto
+
+  .push-left
+    margin-right: 0
+
+// Typography
+
+.home-lead
+  font-size: 16px
+
+  &.outdented
+    text-indent: 1em
