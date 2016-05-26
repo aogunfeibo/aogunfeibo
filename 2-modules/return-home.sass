@@ -1,0 +1,32 @@
+.return-top
+
+  //display: block
+  //width: 120px
+  //text-align: center
+  display: flex
+  flex-direction: row
+  justify-content: center
+  padding-bottom: 30px
+  padding-top: 60px
+  font:
+    size: 15px
+  letter-spacing: 2px
+  opacity: 0.4
+  transition: 0.3s ease-in-out
+
+  &:hover
+    transform: translateY(-15px)
+    opacity: 1
+
+  a
+    +hide-text
+    display: flex
+    background:
+      repeat: no-repeat
+      position: center
+      size: contain
+    height: 20px
+
+@media (max-width:640px)
+  .return-top
+    padding-bottom: 0
