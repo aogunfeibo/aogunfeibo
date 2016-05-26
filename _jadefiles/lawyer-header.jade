@@ -1,0 +1,20 @@
+mixin nav-content()
+  ul
+    li: a(href="/index.html") HOME
+    li: a(href="/index.html#about") ABOUT
+    li: a(href="/index.html#our_services") OUR SERVICES
+    li: a(href="/lawyers" target="_blank") OUR LAWYERS
+    li: a(href="/index.html#contact_us") CONTACT US
+
+
+
+header.header#home
+  .hover-position
+    .header-position
+      nav.site-nav
+        +nav-content()
+      
+      .mobile-nav-toggle: span
+
+.mobile-nav
+  +nav-content()

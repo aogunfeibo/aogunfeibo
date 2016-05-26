@@ -1,0 +1,21 @@
+mixin nav-content()
+  ul
+    li: a(href="/index.html").sh HOME
+    li: a(href="#s1") ASSET TRACING & RECOVERY
+    li: a(href="#s2") DRAFTING & ADVISING
+    li: a(href="#s3") SHIPPING LAW
+    li: a(href="#s4") DUE DILLIGENCE 
+    li: a(href="#s5") INTERNATIONAL REPRESENTATION
+
+
+
+header.header
+  .hover-position
+    .ser-position
+      nav.ser-nav
+        +nav-content()
+      
+      .mobile-nav-toggle: span
+
+.mobile-nav
+  +nav-content()
