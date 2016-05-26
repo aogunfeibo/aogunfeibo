@@ -1,0 +1,88 @@
+section.service-1
+  //height: 100vh
+  background: white
+  padding-top: 100px
+
+  .col-5
+    padding-bottom: 20px
+
+  h2
+    margin-top: 0
+    padding-bottom: 25px
+    font:
+      size: 18px
+      weight: 400
+    color: #3f3f42
+    text-align: center
+    //line-height: 1.1
+    letter-spacing: 2px
+
+  p
+    font:
+      size: 13px
+    text-align: justify
+
+  .col-22
+    padding: 0 20px
+
+  .col-0
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    padding: 0 20px
+
+  .pic
+    background:
+      image: url(../img/advice_bg.jpeg)
+      position: center top
+      size: cover
+    display: block
+    height: 350px
+    width: 350px
+    margin: auto
+    margin-top: 70px
+  .back-cta
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    width: 50px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  .return-back
+    margin: auto 0
+    transition: 0.3s ease-in-out
+
+    &:hover
+      transform: translateX(25px)
+
+    a
+      +hide-text
+      transform: rotate(90deg)
+      display: flex
+      background:
+        repeat: no-repeat
+        position: center
+        size: contain
+
+      transition: 0.3s ease-in-out
+
+@media (max-width:640px)
+  section.service-1
+    padding-top: 45px
+    .col-5
+      margin-bottom: 0
+
+    h2
+      width: auto
+      margin: 25px 0
+      padding: 10px
+
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+
+    .col-0
+      display: none
