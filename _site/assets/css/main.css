@@ -8,7 +8,7 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 html {
-  font-family: sans-serif;
+  font-family: 'fira sans' sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
