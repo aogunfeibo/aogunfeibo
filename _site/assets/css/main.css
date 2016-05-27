@@ -483,13 +483,9 @@ fieldset {
 
 @media screen and (max-width: 480px) {
   h3 {
-    padding: 50px 0 50px; } }
-
-section:nth-child(odd) {
-  background: #F6F6F8;
-  padding-bottom: 100px; }
-  section:nth-child(odd) h3 {
-    color: #9a4038; }
+    padding: 50px 0 50px; }
+  h3 {
+    color: #9a4038; } }
 
 /*Status API Training Shop Blog About© 2016 GitHub, Inc. Terms Privacy Security Contact Help */
 .return-top {
@@ -773,7 +769,8 @@ section:nth-child(odd) {
     display: none; } }
 
 section.home-home {
-  background: white; }
+  background: white;
+  height: 100vh; }
   section.home-home .home-title {
     padding-bottom: 170px; }
   section.home-home h1 {
@@ -791,6 +788,7 @@ section.home-home {
         -ms-flex-pack: center;
             justify-content: center;
     color: #3f3f42;
+    font-family: 'Lato';
     font-size: 38px;
     font-weight: 200;
     line-height: 1.1;
@@ -843,7 +841,8 @@ section.about {
   background-color: white;
   background-position: center top;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 100vh; }
   section.about .home-cta {
     -webkit-transform: translateY(-20px);
         -ms-transform: translateY(-20px);
@@ -913,7 +912,8 @@ section.services {
     margin: 0 10px;
     margin-bottom: 50px;
     font-size: 20px;
-    padding-top: 60px; }
+    padding-top: 60px;
+    height: 100vh; }
   section.services h2 {
     margin-top: 0;
     padding-top: 15px;
@@ -1099,7 +1099,8 @@ textarea {
     padding-left: 3%;
     padding-right: 3%; }
   #button-blue {
-    border: none; } }
+    border: none;
+    width: auto; } }
 
 .home-wrap .sh {
   display: none; }
@@ -1470,7 +1471,8 @@ textarea {
 
 section.lawyers {
   background-color: white;
-  padding: 50px 20px 20px 20px; }
+  padding: 50px 20px 20px 20px;
+  height: 100vh; }
   section.lawyers .panel {
     padding-top: 10px; }
   section.lawyers #navigation {
@@ -1539,9 +1541,9 @@ section.lawyers {
     margin: 20px 0;
     text-align: center; } }
 
-section.footer {
+.footer {
   background: white; }
-  section.footer .signature {
+  .footer .signature {
     top: 0;
     left: 0;
     bottom: 0;
@@ -1553,9 +1555,9 @@ section.footer {
     letter-spacing: 0.5px;
     color: #3f3f42;
     text-align: center; }
-  section.footer a {
+  .footer a {
     color: #3f3f42; }
-    section.footer a:hover {
+    .footer a:hover {
       color: #BD5248;
       -webkit-transform: scale(1.02);
           -ms-transform: scale(1.02);
@@ -2018,7 +2020,7 @@ section.service-5 {
   margin-right: 150px; }
 
 @media (max-width: 640px) {
-  .home-sections .flex {
+  .home-sections.flex {
     display: block; }
   .col-0 {
     max-width: 100%; }
