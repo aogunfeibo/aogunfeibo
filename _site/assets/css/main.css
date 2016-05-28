@@ -1001,8 +1001,7 @@ section.services {
     padding: 0; } }
 
 section.contact {
-  background-color: white;
-  height: auto; }
+  background-color: white; }
   section.contact .contact-div {
     padding-top: 80px; }
     section.contact .contact-div h2 {
