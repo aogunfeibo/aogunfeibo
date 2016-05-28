@@ -133,30 +133,39 @@
 
 
 
-@media (max-width: 1024px)
+@media (max-width: 1080px)
   .home-wrap
-
-    .sh
-      display: inline
     header
       width: auto
       padding: 0
 
-      .ser-position
-        position: relative
-        top: auto
-        bottom: auto
-        left: auto
+      .header-position
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
         flex-direction: row
         align-items: center
         justify-content: flex-start
+        z-index: 1
 
-      .ser-nav
+        .logo
+          display: none
+
+      .site-nav
         display: none
 
       .mobile-nav-toggle
         display: flex
 
+    .header-position.is-open
+      position: fixed
+      background:
+        color: white
+
     .mobile-nav.is-open
       display: block
+      position: fixed
       transform: translateY(0%)
+      transition: 0.3s ease-in-out

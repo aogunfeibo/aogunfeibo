@@ -803,8 +803,8 @@ section.home-home {
   background: white;
   height: 100vh; }
   section.home-home .home-title {
-    padding-bottom: 170px;
-    margin: auto 0; }
+    margin: auto 0;
+    margin-top: -11%; }
   section.home-home h1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -825,9 +825,7 @@ section.home-home {
     font-weight: 300;
     line-height: 1.1;
     letter-spacing: 2.5px;
-    margin: 0;
-    padding-top: 150px;
-    margin-bottom: 75px; }
+    padding-bottom: 7%; }
   section.home-home .home-description {
     display: -webkit-box;
     display: -webkit-flex;
@@ -850,8 +848,6 @@ section.home-home {
 @media (max-width: 640px) {
   section.home-home {
     height: 80vh; }
-    section.home-home .home-title {
-      padding-bottom: 50px; }
     section.home-home h1 {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
@@ -956,7 +952,7 @@ section.services {
     margin: auto 0; }
   section.services h2 {
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 40px;
     padding-bottom: 10px;
     font-family: 'Lato';
     font-size: 37px;
@@ -1293,17 +1289,16 @@ textarea {
     text-align: center;
     margin-bottom: 10px; }
 
-@media (max-width: 1024px) {
-  .home-wrap .sh {
-    display: inline; }
+@media (max-width: 1080px) {
   .home-wrap header {
     width: auto;
     padding: 0; }
-    .home-wrap header .ser-position {
-      position: relative;
-      top: auto;
-      bottom: auto;
-      left: auto;
+    .home-wrap header .header-position {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
@@ -1317,19 +1312,28 @@ textarea {
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
-              justify-content: flex-start; }
-    .home-wrap header .ser-nav {
+              justify-content: flex-start;
+      z-index: 1; }
+      .home-wrap header .header-position .logo {
+        display: none; }
+    .home-wrap header .site-nav {
       display: none; }
     .home-wrap header .mobile-nav-toggle {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
+  .home-wrap .header-position.is-open {
+    position: fixed;
+    background-color: white; }
   .home-wrap .mobile-nav.is-open {
     display: block;
+    position: fixed;
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
-            transform: translateY(0%); } }
+            transform: translateY(0%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; } }
 
 .home-wrap .hover-position {
   height: 50px;
@@ -1487,15 +1491,16 @@ textarea {
     .home-wrap .mobile-nav a:hover {
       color: #BD5248; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .home-wrap header {
     width: auto;
     padding: 0; }
     .home-wrap header .header-position {
-      position: relative;
-      top: auto;
-      bottom: auto;
-      left: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
@@ -1509,7 +1514,10 @@ textarea {
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
-              justify-content: flex-start; }
+              justify-content: flex-start;
+      z-index: 1; }
+      .home-wrap header .header-position .logo {
+        display: none; }
     .home-wrap header .site-nav {
       display: none; }
     .home-wrap header .mobile-nav-toggle {
@@ -1517,13 +1525,17 @@ textarea {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
+  .home-wrap .header-position.is-open {
+    position: fixed;
+    background-color: white; }
   .home-wrap .mobile-nav.is-open {
     display: block;
     position: fixed;
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
             transform: translateY(0%);
-    z-index: 1; } }
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; } }
 
 section.lawyers {
   background-color: white;
