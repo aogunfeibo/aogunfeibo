@@ -6,6 +6,8 @@ section.about
     size: cover
     attachment: fixed
   height: 100vh
+  @media (max-width: 1024px)
+      height: auto
   padding: 5px 0
 
   .home-cta
@@ -69,10 +71,7 @@ section.about
 
 @media (max-width:640px)
   section.about
-    height: auto
-
     .about-sec
-      overflow: hidden
 
     h2
       margin-bottom: 10px
