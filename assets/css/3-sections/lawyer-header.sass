@@ -68,43 +68,46 @@
 
 
 
-    .mobile-nav-toggle
-      display: none
-      width: 50px
-      height: 50px
-      margin: 0 20px
-      align-items: center
-      cursor: pointer
+  .mobile-nav-toggle
+    display: none
+    width: 25px
+    height: 50px
+    margin: 0 20px
+    align-items: center
+    cursor: pointer
 
-      span,
-      span:before,
-      span:after
-        content: ""
-        display: block
-        height: 2px
-        width: 100%
-        background: #333
-        position: relative
+    span,
+    span:before,
+    span:after
+      content: ""
+      display: block
+      height: 2px
+      width: 100%
+      background: #333
+      position: relative
+      border-radius: 2px
 
-        transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
 
-      span:before
-        top: 15px
+    span:before
+      top: 10px
 
-      span:after
-        top: -17px
+    span:after
+      top: -12px
 
-      &.is-open span
-        background: transparent
+    &.is-open span
+      background: transparent
 
-      &.is-open span:before,
-      &.is-open span:after
+    &.is-open span:before,
+    &.is-open span:after
+      transform-origin: center
+      transform: rotate(45deg)
+      top: 0
+
+    &.is-open span:before
         transform-origin: center
-        transform: rotate(45deg)
-        top: 0
-
-      &.is-open span:before
-          transform: rotate(-45deg)
+        transform: rotate(-45deg)
+        top: 1px
 
   // Mobile Nav
   .mobile-nav
