@@ -1598,22 +1598,22 @@ section.lawyers {
     background-position: center bottom; }
 
 @media (max-width: 1024px) {
-  section.lawyers {
-    height: auto; }
-    section.lawyers .panels {
-      display: block; }
-      section.lawyers .panels ul {
-        margin-left: 0; }
-    section.lawyers .col-5 {
-      display: block; }
-      section.lawyers .col-5 .col-0 {
-        margin: 10px 0;
-        width: 100%; }
+  section.lawyers .panels {
+    display: block; }
+    section.lawyers .panels ul {
+      margin-left: 0; }
+  section.lawyers .col-5 {
+    display: block; }
+    section.lawyers .col-5 .col-0 {
+      margin: 10px 0;
+      width: 100%; }
+  section.lawyers .people-description-container {
+    text-align: center; }
     section.lawyers .people-description-container h2 {
       text-align: center; }
-    section.lawyers #navigation {
-      margin: 20px 0;
-      text-align: center; } }
+  section.lawyers #navigation {
+    margin: 20px 0;
+    text-align: center; } }
 
 .footer {
   background: white; }
