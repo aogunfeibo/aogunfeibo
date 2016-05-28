@@ -928,11 +928,11 @@ section.about {
     width: auto;
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 15px; }
-  section.about .read-more {
-    width: auto;
-    padding-bottom: 40px;
-    padding-left: 10px; } }
+    padding-top: 15px; } }
+
+@media (max-width: 1024px) {
+  .home-cta {
+    display: none; } }
 
 section.services {
   background-image: url(../img/our_services_bg.jpg);
@@ -1624,14 +1624,9 @@ section.lawyers {
     text-align: center; }
   section.lawyers #navigation {
     margin: 20px 0;
-    text-align: center; } }
-
-@media (max-width: 640px) {
-  section.lawyers #ldb {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-        -ms-flex-order: -1;
-            order: -1; } }
+    text-align: center; }
+  section.lawyers .home-cta {
+    display: none; } }
 
 .footer {
   background: white; }
