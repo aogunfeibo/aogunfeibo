@@ -19,10 +19,6 @@
 //   });
 //});
 
-
-
-
-
 //fade div in and out
 
 $(document).ready(function(){
