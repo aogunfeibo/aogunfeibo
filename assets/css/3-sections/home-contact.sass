@@ -1,6 +1,7 @@
 section.contact
   background:
     color: white
+  height: 100vh
 
   .contact-div
     padding-top: 80px
@@ -30,7 +31,11 @@ section.contact
 
 
 @media (max-width:640px)
+.home-sections
   section.contact
+    padding-bottom: 0
+    @media (max-width: 1024px)
+      height: auto
 
     h2
       margin: 10px 0
@@ -138,9 +143,12 @@ textarea:focus
 
 @media (max-width: 580px)
 
+  #form-main
+    width: 90%
+
   #form-div
   	left: 3%
-  	width: 88%
+  	//width: 90%
   	padding-left: 3%
   	padding-right: 3%
 

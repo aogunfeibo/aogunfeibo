@@ -1,23 +1,23 @@
 //hide header hover
-$(document).ready(function(){
-   $(window).resize(function() {
-      if ($(window).width() <= 775) {
+
+//   $(window).resize(function() {
+  //    if ($(window).width() <= 775) {
          // Leave empty
-      }
-      else {
-        $(function() {
-              $('.header-position').hide();
-        });
+    //  }
+      //else {
+        //$(function() {
+          //    $('.header-position').hide();
+        //});
 
-        $(".header, .hover-position, .hover-space").hover(function () {
-            $(".header-position").stop().slideDown(300);
-        }, function(){
-            $(".header-position").stop().slideUp(300);
+      //  $(".header, .hover-position, .hover-space").hover(function () {
+        //    $(".header-position").stop().slideDown(300);
+      //  }, function(){
+        //    $(".header-position").stop().slideUp(300);
 
-        });
-      }
-   });
-});
+//        });
+  //    }
+//   });
+//});
 
 
 
