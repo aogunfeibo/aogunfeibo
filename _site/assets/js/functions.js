@@ -30,7 +30,7 @@ $(document).ready(function(){
         };
 
         //Hide all of the content except the first one on the nav
-        $(settings.contentClass).not(':first').hide();
+        $(settings.contentClass).not(':first').hide(300);
         $(settings.navigationId).find('li:first').addClass('active');
 
         //onClick set the active state,

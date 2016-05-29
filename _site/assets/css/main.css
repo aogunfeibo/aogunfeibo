@@ -795,7 +795,7 @@ fieldset {
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .services-wrap header {
     display: none; } }
 
@@ -1293,15 +1293,16 @@ textarea {
     margin-bottom: 10px; }
 
 @media (max-width: 1080px) {
+  .home-wrap .sh {
+    display: inline; }
   .home-wrap header {
     width: auto;
     padding: 0; }
-    .home-wrap header .header-position {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+    .home-wrap header .ser-position {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      left: auto;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
@@ -1315,20 +1316,14 @@ textarea {
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
           -ms-flex-pack: start;
-              justify-content: flex-start;
-      z-index: 1; }
-      .home-wrap header .header-position .logo {
-        display: none; }
-    .home-wrap header .site-nav {
+              justify-content: flex-start; }
+    .home-wrap header .ser-nav {
       display: none; }
     .home-wrap header .mobile-nav-toggle {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-  .home-wrap .header-position.is-open {
-    position: fixed;
-    background-color: white; }
   .home-wrap .mobile-nav.is-open {
     display: block;
     position: fixed;
