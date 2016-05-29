@@ -936,7 +936,8 @@ section.services {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh; }
+  height: 100%;
+  min-height: 100vh; }
   @media (max-width: 1024px) {
     section.services {
       height: auto; } }
@@ -945,6 +946,9 @@ section.services {
     margin-bottom: 50px;
     font-size: 20px;
     padding-top: 60px; }
+  section.services .home-cta {
+    bottom: 0;
+    top: auto; }
   section.services .sec-services {
     margin: auto 0; }
   section.services h2 {
